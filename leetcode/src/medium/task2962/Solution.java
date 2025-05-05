@@ -2,7 +2,7 @@ package medium.task2962;
 
 class Solution {
 
-    public static long countSubarrays(int[] nums, int k) {
+    public long countSubarrays(int[] nums, int k) {
         long ans = 0;
         int max = nums[0];
         for (int i = 0; i < nums.length; i++) {
@@ -34,12 +34,7 @@ class Solution {
             endMax++;
             maxCount--;
         }
-        System.out.println(ans);
         return ans;
-    }
-
-    public static void main(String[] args) {
-        countSubarrays(new int[]{1, 4, 2, 1}, 3); // 11
     }
 
 }
